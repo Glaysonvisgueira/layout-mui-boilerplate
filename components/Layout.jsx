@@ -187,7 +187,7 @@ export default function Layout({ children }) {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap component="div">
-              Mini variant drawer
+              Dashboard template
             </Typography>
           </Box>
 

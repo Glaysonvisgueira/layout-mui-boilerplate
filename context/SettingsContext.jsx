@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import { darkTheme, lightTheme, getDesignTokens } from "../styles/Themes";
 import { ThemeProvider } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 
 export const SettingsContext = createContext({});
 
@@ -23,7 +24,10 @@ export default function SettingsProvider({ children }) {
 
   return (
     <SettingsContext.Provider value={{ changeThemeOptions }}>
-      <ThemeProvider theme={themeOptions}>{children}</ThemeProvider>
+      <ThemeProvider theme={themeOptions}>
+        <CssBaseline />
+        {children}
+      </ThemeProvider>
     </SettingsContext.Provider>
   );
 }
