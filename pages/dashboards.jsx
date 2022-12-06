@@ -82,7 +82,7 @@ const CustomGridDashItem = styled(Grid)(({ theme }) => ({
     justifyContent: "flex-start",
     height: "100%",
     width: "100%",
-    borderRadius: "4px",
+    //borderRadius: "4px",
     background: theme.palette.action.hover,
 
     ".title": {
@@ -194,7 +194,7 @@ export default function Dashboards() {
       </Grid>
 
       <Grid container spacing={0}>
-        <CustomGridDashItem item xs={12} sm={12} md={6} lg={4} xl={3}>
+        <CustomGridDashItem item xs={12} sm={12} md={6} lg={6} xl={6}>
           <div className="container-box">
             <div className="title">
               <Stack
@@ -225,7 +225,7 @@ export default function Dashboards() {
             <div className="dash"></div>
           </div>
         </CustomGridDashItem>
-        <CustomGridDashItem item xs={12} sm={12} md={6} lg={4} xl={3}>
+        <CustomGridDashItem item xs={12} sm={12} md={6} lg={6} xl={6}>
           <div className="container-box">
             <div className="title">
               <Stack
@@ -256,38 +256,7 @@ export default function Dashboards() {
             <div className="dash"></div>
           </div>
         </CustomGridDashItem>
-        <CustomGridDashItem item xs={12} sm={12} md={6} lg={4} xl={3}>
-          <div className="container-box">
-            <div className="title">
-              <Stack
-                direction="row"
-                spacing={1}
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "flex-start",
-                  margin: "12px",
-                }}
-              >
-                <Tooltip title="Informações sobre o gráfico" placement="top">
-                  <InfoIcon
-                    sx={{
-                      color: theme.palette.text.secondary,
-                      "&:hover": { cursor: "pointer" },
-                    }}
-                  />
-                </Tooltip>
-                <Typography variant="h5">Título do gráfico</Typography>
-              </Stack>
-              <Divider
-                orientation="horizontal"
-                sx={{ mt: 1, mb: 1, color: theme.palette.divider }}
-              />
-            </div>
-            <div className="dash"></div>
-          </div>
-        </CustomGridDashItem>
-        <CustomGridDashItem item xs={12} sm={12} md={6} lg={4} xl={3}>
+        <CustomGridDashItem item xs={12} sm={12} md={12} lg={12} xl={12}>
           <div className="container-box">
             <div className="title">
               <Stack
