@@ -1,8 +1,19 @@
 import { createTheme } from "@mui/material";
+import { orange, deepOrange, grey } from "@mui/material/colors";
 
 export const darkTheme = createTheme({
   palette: {
     mode: "dark",
+    primary: grey,
+    divider: grey[700],
+    background: {
+      default: grey[900],
+      paper: grey[900],
+    },
+    text: {
+      primary: "#fff",
+      secondary: grey[500],
+    },
   },
 });
 
